@@ -29,8 +29,6 @@ pipeline {
       stage('Pushing to Dockerhub') {
 
                steps {
-                  sh 'docker push gradproj/nf-nrf:latest'
-                  sh 'docker push gradproj/pcf:latest'
                   sh 'docker push gradproj/nssf:latest'
                }
             }
